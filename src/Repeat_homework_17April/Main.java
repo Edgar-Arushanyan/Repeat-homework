@@ -3,14 +3,16 @@ package Repeat_homework_17April;
 public class Main {
     public static void main(String[] args) {
 
-        // 1. Stringconcate
+        // 1. Stringconcate- Написать следующие лямбды используя наши интерфейс и сложить строки a и  b
+
+
         Stringconcate strConcate = (a, b) -> Integer.toString(a) + (b);
         System.out.println(strConcate.concate(1, 1));  // 11
 
 
 
 
-        // 2. Checkable
+        // 2. Checkable-  есть строка, если ее длина равна 3 вернуть true  иначе  false
 
         Checkable checkable = in -> in.length() == 2;
         System.out.println(checkable.check("Hi"));  //true
@@ -18,7 +20,7 @@ public class Main {
 
 
 
-        // 3. Printable
+        // 3. Printable-Есть строка string распечатать ее в виде !string!
 
         Printable printable = str-> {
             System.out.println("!"+str+"!");
@@ -27,7 +29,7 @@ public class Main {
 
 
 
-        // 4. Producable
+        // 4. Producable-
         // написать лямбда выражение такое что будет печататься "Hello World"
 
         Producable producable = ()-> "Hello World";
